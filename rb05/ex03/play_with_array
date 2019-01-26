@@ -1,0 +1,12 @@
+#! /usr/bin/env ruby
+are = [1,2,5,8,9,9,8]
+are.uniq!
+p are
+
+are2 = []
+  are.each do |n|
+    if n> 5
+      then are2 << n+2
+    end
+  end
+p are2

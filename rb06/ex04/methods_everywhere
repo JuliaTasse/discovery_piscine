@@ -1,0 +1,26 @@
+#! /usr/bin/env ruby
+chaine = ARGV
+chaine = chaine.to_s.chomp
+chaine.delete('"', '[', ']')
+chaine.each_char { |c| print "#{c}" }
+
+def retrecit(elt1)
+  puts "#{elt1.slice(1..9)}"
+end
+
+def agrandit (elt2)
+  while elt2.length < 8
+    elt2 += "z"
+  end
+  return elt2
+end
+
+if chaine.length > 8
+  retrecit(chaine)
+elsif chaine.length < 8
+  agrandit (chaine)
+elsif chaine.length == 8
+  puts "ca fait 8"
+elsif chaine.length < 1
+  puts "none"
+end

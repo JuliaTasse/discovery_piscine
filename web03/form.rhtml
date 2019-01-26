@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+  </head>
+  <style>
+    h1, form {text-align:center;
+    font-family:"Comic Sans MS";
+    color:#498ddb;
+  background-color:#81DAF5}
+  </style>
+
+  <body>
+    <h1> Bienvenue</h1>
+    <h2> Log In</h2>
+
+    <%= form_tag ("/search", method: "get") do %>
+    <%= label_tag (:q "Entrez votre nom") %>
+    <%= text_field_tag (:q) %>
+    <%= submit_tag ("Valider") %>
+    <% end %>
+
+
+
+    <form>
+      Entrez votre nom:<input type="text" name="Nom"><br>
+<% nom = gets.chomp.to_s %>
+      Entrez votre prenom:<input type="text" name="prenom"><br>
+<% nom = gets.chomp.to_s %>
+
+      Valider<input type="submit" value="Valider">
+    </form>
+
+<%= if servlet_request.query['Valider'] == "submit"
+      "Bonjour #{Nom} #{prenom}"
+    else "Sorry"
+    end
+%>
+  </body>
+</html>

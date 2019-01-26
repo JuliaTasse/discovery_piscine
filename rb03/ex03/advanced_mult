@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+number = 0
+while number <= 10
+
+  for i in 0..10
+    puts "Table de #{number}: #{number * i} #{number * i + 1} #{number * i + 2} #{number * i + 3} #{number * i + 4} #{number * i + 5} #{number * i + 6} #{number * i +7}"
+  number = number + 1
+  end
+end

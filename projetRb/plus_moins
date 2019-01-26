@@ -1,0 +1,30 @@
+#! /usr/bin/env ruby
+
+nombre = rand(0..100).to_i
+difficulty = 6
+
+puts "Entrer un nombre entre 0 et 100"
+devin = gets.to_i
+
+while difficulty > 1
+  if devin <0 or devin > 100
+  puts "Ce nombre n'est pas compris entre 0 et 100"
+  elsif devin == nombre
+  puts "Vous avez gagne !!"
+    break if devin == nombre
+  elsif difficulty >2 && devin < nombre
+  puts "+ et il vous reste #{difficulty-1} essais"
+elsif difficulty >2 && devin > nombre
+  puts "- et il vous reste #{difficulty-1} essais"
+elsif difficulty == 2 && devin > nombre
+  puts "- et il vous reste 1 essai"
+elsif difficulty == 2 && devin < nombre
+  puts "+ et il vous reste 1 essai"
+  end
+  devin = gets.to_i
+  difficulty = difficulty -1
+end
+
+if difficulty == 1
+  puts "Vous avez perdu :'( le nombre etait : #{nombre}"
+end

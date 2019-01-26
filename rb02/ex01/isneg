@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+nombre = (puts "Entrer un nombre";gets).to_i #la variable nombre est issue du resultat de gets et est un entier integral
+if nombre < 0
+  puts "Ce nombre est negatif"
+elsif nombre > 0
+  puts "Ce nombre est positif"
+elsif nombre == 0
+  puts "Ce nombre est egal a 0"
+end

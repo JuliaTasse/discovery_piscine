@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+puts " Entrer un nombre"
+nombre = gets.to_i #ceci est un entier integral
+if nombre == 0
+  then puts "Ce nombre est egal a zero"
+  else puts "Ce nombre est different de zero"
+end

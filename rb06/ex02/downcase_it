@@ -1,0 +1,12 @@
+#! /usr/bin/env ruby
+def downcase_it
+  chaine = ARGV
+  if chaine.length < 1
+      puts "none"
+  else
+  chaine1 = chaine.to_s.chomp
+  puts "#{chaine1.downcase}"
+  end
+end
+
+downcase_it

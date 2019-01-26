@@ -1,0 +1,21 @@
+#! /usr/bin/env ruby
+def array_des_noms (nom)
+  array = [nom]
+  puts array
+  array.each do |n|
+    m = "#{n.titleize}"
+  arr2 = [m]
+  end
+  p arr2
+end
+
+
+
+personnes = {
+  "jean" => "valjean",
+  "grace" => "hopper",
+  "xavier" => "niel",
+  "fifi" => "brindacier"
+  }
+
+p array_des_noms(personnes)

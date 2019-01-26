@@ -1,0 +1,23 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+mdp = input_array[0]
+
+if input_array.length <1
+  puts "none"
+else
+  #puts input_array
+  puts "What was the parameter? : "
+  reponse = STDIN.gets.chomp
+    if reponse == mdp
+      puts "Good job guys!"
+    else
+      puts "Nope, Sorry"
+    end
+end
+
+#methode qui ne marche pas mais qui permet de comparer aussi
+#test = (/input/ !~ reponse)
+#  if test = false
+  #  puts "Good job guys!"
+  #else puts "Nope, Sorry"
+#  my_match = /reponse/.match(input)

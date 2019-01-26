@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+print "Hey, what's your first name ?"
+first_name = gets.chomp
+print"and your last name?"
+last_name = gets
+puts "Oh my god, I'm so honored to finally meet the famous #{first_name} #{last_name}"

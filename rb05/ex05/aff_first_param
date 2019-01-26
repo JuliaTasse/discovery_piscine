@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+if input_array.length == 0
+  puts "none"
+else input_array.each do |arg|
+  puts "#{arg}"
+  break
+end
+end

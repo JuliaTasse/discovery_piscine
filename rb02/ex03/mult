@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+puts "Entrer un premier nombre"
+nombre1 = gets.to_i
+puts "Merci! Entrer un deuxieme nombre"
+nombre2 = gets.to_i
+result = nombre1 * nombre2
+result = result.to_i
+puts "#{nombre1} x #{nombre2} = #{result}"
+if result < 0
+  puts "Le resultat est negatif"
+elsif result == 0
+  puts "Le resultat est nul"
+elsif result > 0
+  puts "Le resultat est positif"
+end

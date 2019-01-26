@@ -1,0 +1,11 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+if input_array.length <1
+  puts "none"
+else
+  puts "parametres : #{input_array.length} "
+  input_array.each do |n|
+    puts "#{n} : #{n.length}"
+  end
+end

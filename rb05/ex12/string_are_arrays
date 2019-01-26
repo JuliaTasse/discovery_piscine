@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+input = input_array.join
+
+if input_array.length <1
+  puts "none"
+else
+  nombre = input.scan(/z/)
+  puts "#{nombre.join}"
+  end

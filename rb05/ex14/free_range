@@ -1,0 +1,7 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+if input_array.length <2
+  puts "none"
+  else p (input_array[0]..input_array[1]).to_a
+end

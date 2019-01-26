@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+first_arg, *chain_array = ARGV
+first_arg = first_arg.chomp.to_s
+
+puts "#{first_arg} #{chain_array}"
+
+if chain_array.length <1
+  puts "none"
+else chain_array = chain_array.to_s
+  ocu = chain_array.scan(/first_arg+/i)
+    if ocu == nil
+      puts "none"
+    else
+      puts "#{ocu.length}"
+    end
+end

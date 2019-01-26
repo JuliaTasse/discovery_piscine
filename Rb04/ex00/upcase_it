@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+puts "Give me a word, champion !"
+word = gets.to_s
+
+print "#{word.upcase}"

@@ -1,0 +1,38 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+if input_array.length <1
+  puts "none" #on elimine s'il n'y pas de reponse
+
+else input_array.each do |n|
+    my_match = /isme/.match(n)
+    if my_match == nil
+      print "nul"
+    else input_array.delete(n)
+    end
+    puts "#{my_match}"
+  end
+end
+
+puts "#{input_array}"
+
+#input_array.each do |n|
+#n.slice!(0, -1)
+#end
+#puts "#{input_array}"
+
+input_array.each do |l|
+ t = l.slice(0..-2)
+ puts "#{t+"isme"}"
+end
+
+
+#if my_match == nil
+  #n_tr = n\
+
+  #  puts rj
+#    input = input_array.reject {rj}
+  #  input.each do |elt| # on divise le array
+  #  puts elt
+  #  end
+#end

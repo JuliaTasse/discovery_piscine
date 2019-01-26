@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+  </head>
+  <style>
+    h1, form {text-align:center;
+    font-family:"Comic Sans MS";
+    color:#498ddb;
+  background-color:#81DAF5}
+  </style>
+
+  <body>
+    <h1> Les formulaires HTML</h1>
+    <form method ="GET">
+      Entrez votre nom:
+    <input type="text" name="Nom">
+    <br>
+    Entrez votre prenom:
+    <input type="text" name="lastname">
+    <br>
+    <input type="submit" value="Valider">
+      </form>
+  </body>
+
+  <%= servlet_request.query [""] %>
+  <%=
+  if servlet_request.query['way'] == "forward"
+    "Hello #{Nom} #{lastname}"
+  else
+    "Sorry"
+  end
+  %>
+</html>

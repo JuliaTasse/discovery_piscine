@@ -1,0 +1,8 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+if input_array.length < 2
+  puts "none"
+else
+  puts input_array.reverse
+end

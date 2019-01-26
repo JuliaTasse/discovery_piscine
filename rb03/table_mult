@@ -1,0 +1,7 @@
+#! /usr/bin/env ruby
+puts " Entrer un nombre"
+nombre = gets.to_i
+
+for i in 0..9 # tant que i est entre 0 et 10, la suite des ordres est executee
+  puts "#{nombre} x #{i} = #{nombre * i}"
+end

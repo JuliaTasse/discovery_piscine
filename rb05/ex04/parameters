@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+input_array = ARGV
+
+puts "Nombre de parametres: #{input_array.length}"
+puts "Nombre de parametres: #{input_array.size}"

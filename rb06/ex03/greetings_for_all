@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+
+def greetings(prenom)
+
+  if (prenom.is_a? Fixnum) == true
+    puts "Erreur, ce n'est pas un nom"
+  elsif (prenom.is_a? String) == true
+    puts "Bonjour #{prenom}"
+  else
+    puts "Bonjour Noble Inconnu(e)"
+  end
+end
+
+greetings ("julia")
+greetings (27)
+greetings ()

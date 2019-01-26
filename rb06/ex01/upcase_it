@@ -1,0 +1,12 @@
+#! /usr/bin/env ruby
+def upcase_it
+  chaine = ARGV
+  if chaine.length < 1
+    puts "none"
+  else
+  chaine1 = chaine.to_s.chomp
+  end
+  puts "#{chaine1.upcase}"
+end
+
+upcase_it

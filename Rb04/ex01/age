@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+puts "Quel age avez vous ?"
+age = gets.to_i
+
+puts "Vous avez actuellement #{age} ans."
+puts "Dans 10 ans, vous aurez #{age + 10} ans."
+puts "Dans 20 ans, vous aurez #{age + 20} ans."
+puts "Dans 30 ans, vous aurez #{age + 30} ans."

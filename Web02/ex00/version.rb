@@ -1,0 +1,3 @@
+
+puts "Ruby #{RUBY_VERSION}"
+RUBY_VERSION

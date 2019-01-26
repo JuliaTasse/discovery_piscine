@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+def add_one(x)
+  puts "#{x+1}"
+end
+
+
+
+add_one(var = 18)
+puts "#{var}"

@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+are = [1,2,5,8,9]
+p are
+
+are2 = []
+  are.each do |n|
+  are2 << n+2
+  end
+
+p are2

@@ -1,0 +1,24 @@
+#! /usr/bin/env ruby
+chaine = ARGV
+first = chaine[0]
+
+def retrecit(elt1)
+  return "#{elt1.slice(0..8)}"
+end
+
+def agrandit (elt2)
+  while elt2.length < 8
+    elt2 += "z"
+  end
+  return elt2
+end
+
+if chaine.length < 1
+  puts "none"
+elsif first.length > 8
+  puts retrecit(first)
+elsif (first.length < 8 && first.length > 0)
+  puts agrandit (first)
+elsif first.length == 8
+  puts "ca fait 8"
+end

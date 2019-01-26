@@ -1,0 +1,16 @@
+#! /usr/bin/env ruby
+first_arg, *chain_array = ARGV
+first_arg = first_arg.to_s
+
+puts "#{ARGV.count(first_arg)}"
+
+if chain_array.length <1
+  puts "none"
+else puts "on continue"
+end
+
+chain_array.each do |n|
+  if n.eql?(first_arg)
+    print "1"
+  end
+end

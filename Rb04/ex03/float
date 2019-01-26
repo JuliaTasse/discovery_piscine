@@ -1,0 +1,10 @@
+#! /usr/bin/env ruby
+
+puts "Donne moi un nombre:"
+nombre = gets.to_f
+divis = nombre.to_i
+
+if nombre - divis == 0
+  puts "Ce nombre est entier"
+else puts "Ce nombre est decimal"
+end
