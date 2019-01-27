@@ -1,16 +1,18 @@
 #! /usr/bin/env ruby
-def array_des_noms (nom)
-  array = [nom]
+
+def array_des_noms(nom)
+  array = [nom.each{ |k, v| nom[k]=*v}]
+
+  puts array.class
   puts array
-  array.each do |n|
-    m = "#{n.titleize}"
-  arr2 = [m]
-  end
-  p arr2
+  array.map! {|elt| elt.gsub(/}/, '')}
+  puts array
+  #  delete('"', '[/', '/]', '=>', '{/', '/}')}
+  puts array
+  #m = array.map! {|string| string.titleize}
+    #m = string.gsub(/\(["[]=>{})/, '')
+    #puts m
 end
-
-
-
 personnes = {
   "jean" => "valjean",
   "grace" => "hopper",
